@@ -24,10 +24,12 @@
         android:id="@+id/ivPlaceholder"
         android:layout_width="128dp"
         android:layout_height="128dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
         android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/ic_launcher_round"
-        tools:layout_editor_absoluteX="32dp" />
+        app:srcCompat="@mipmap/ic_launcher_round" />
 
     <ImageView
         android:id="@+id/ivSearch"
@@ -61,7 +63,7 @@
         android:id="@+id/tvSymbol"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toStartOf="@id/tvName"
+        app:layout_constraintStart_toStartOf="@id/tvName"
         app:layout_constraintTop_toBottomOf="@id/tvName" />
 
     <TextView
